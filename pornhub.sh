@@ -1,7 +1,7 @@
 #!/bin/bash
 clear 
 p=1
-echo -e "\e[1;31m                           
+echo -e "\e[1;33m                           
 #####   ####  #####  #    # #    # #    # #####  
 #    # #    # #    # ##   # #    # #    # #    # 
 #    # #    # #    # # #  # ###### #    # #####  
@@ -12,9 +12,9 @@ echo -e "\e[1;31m
 
 echo ""
 
-echo -e "\e[1;36m        Code By PyaeSoneHmoo (Ad A M ) \e[0m"
+echo -e "\e[1;35m        Code By PyaeSoneHmoo (Ad A M ) \e[0m"
 echo ""
-echo -e "\e[1;32m      !Only for boys over 18 years old! \e[0m"
+echo -e "\e[1;33m      !Only for boys over 18 years old! \e[0m"
 echo ""
 read  -p "Enter Category :: " pa 
 echo ""
