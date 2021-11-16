@@ -31,8 +31,8 @@ for i in $(seq $(cat res.txt | wc -l ))
 do 
 echo ""
 sleep 2 
-echo -e "\e[1;32m [#] Title :: "$(cat title.txt | sed -n "${i}p" )
-echo -e "\e[1;32m [#] Link :: https://www.pornhub.com/view_video"$(cat res.txt | sed -n "${i}p" )
+echo -e "\e[1;33m [#] Title :: "$(cat title.txt | sed -n "${i}p" )
+echo -e "\e[1;32m [#] Link :: [4;36m https://www.pornhub.com/view_video"$(cat res.txt | sed -n "${i}p" )
 echo ""
 done 
 rm -rf res.txt 
