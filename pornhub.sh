@@ -37,4 +37,6 @@ echo ""
 done 
 rm -rf res.txt 
 rm -rf title.txt 
+read -p " you want to see url : " ghost
+
 fi 
