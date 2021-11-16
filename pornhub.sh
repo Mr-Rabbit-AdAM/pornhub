@@ -12,7 +12,7 @@ echo -e "\e[1;31m
 
 echo ""
 
-echo -e "\e[1;34m        Code By PyaeSoneHmoo (Ad A M ) \e[0m"
+echo -e "\e[1;36m        Code By PyaeSoneHmoo (Ad A M ) \e[0m"
 echo ""
 echo -e "\e[1;32m      !Only for boys over 18 years old! \e[0m"
 echo ""
@@ -38,5 +38,5 @@ done
 rm -rf res.txt 
 rm -rf title.txt 
 read -p " you want to see url : " ghost
-
+termux-open $ghost
 fi 
