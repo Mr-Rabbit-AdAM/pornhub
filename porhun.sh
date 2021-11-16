@@ -21,10 +21,10 @@ echo ""
 echo -e "\e[1;33m If you want to stop (CTRL + C ) \e[0m"
 
 video=$(curl -s "https://www.pornhub.com/video/search?search=$pa&page=$p" -L | grep -oP '<a href="/view_video\K[^ ]+"' | cut -d '"' -f1 | sort -u > res.txt)
-videonya=$(curl -s "https://www.pornhub.com/video/search?search=$pa&page=$p" -L | grep -oP '<a href="/view_video\K[^ ]+"' | cut -d '"' -f1)
+error=$(curl -s "https://www.pornhub.com/video/search?search=$pa&page=$p" -L | grep -oP '<a href="/view_video\K[^ ]+"' | cut -d '"' -f1)
 
 title=$(curl -s "https://www.pornhub.com/video/search?search=$pa&page=$p" -L | grep -oP '<a href="/view_video\K[^ ]+" title="(.*?)"' | cut -d '"' -f3 | sort -u > title.txt)
-if [[ -z $videonya ]];then
+if [[ -z $error ]];then
 echo -e "\e[1;31m You check the internet \e[0m"
 else 
 for i in $(seq $(cat res.txt | wc -l ))
